@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <div class="search-css">
     <form class="search-form" id="search-form">
         <input
           type="text"
@@ -14,8 +16,11 @@
           placeholder="Search images..."
           class="js-searh-form"
         />
-        <button type="submit" class="search-btn">Search</button>
+        <button type="submit" class="search-btn"><svg width="20" height="20">
+          <use href="./images/svg.svg#icon-search" ></use>
+        </svg></button>
       </form>
+    </div>
       <div class="gallery">
         <!-- Карточки изображений 1-->
 

@@ -1,0 +1,130 @@
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.search-css{
+    background-color: #5031A7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.js-searh-form {
+    
+    width: 293px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border-radius: 10px 0px 0px 10px;
+    background: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 42px;
+    padding: 5px;
+    flex-shrink: 0;
+    border-radius: 0px 10px 10px 0px;
+    background: #F4F1F1;
+    border: 0px solid black;
+    cursor: pointer;
+    
+}
+
+.search-btn:hover {
+    fill: #ffffff;
+    background-color: #23144F;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.search-btn:focus {
+    fill: #ffffff;
+    background-color: #23144F;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.js-searh-form:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.js-searh-form:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.gallery {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img{
+    width: 600px;
+    height: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+.target-element {
+    
+}
+
+
+.photo-card {
+    outline: 1px solid #D3D3D3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+ padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-item {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-item-js{
+    font-weight: 500;
+}

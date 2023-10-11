@@ -20,7 +20,7 @@ const observer = new IntersectionObserver(
   },
   {
     root: null,
-    rootMargin: '300px',
+    rootMargin: '1500px',
     threshold: 1,
   }
 );
@@ -42,7 +42,7 @@ async function handleSubmit(event) {
     const response = await pixabayAPI.getPhotos();
 
     if (response.data.total) {
-      Notify.success(` we find ${Math.ceil(response.data.total / 40)} page`);
+      Notify.success(` We find ${response.data.totalHits  } images`);
     } else {
       Notify.failure(`Sorry! We didn't find your query. Please, try again.`);
     }
@@ -55,7 +55,7 @@ async function handleSubmit(event) {
       observer.unobserve(anchor);
     }
 
-    if (response.data.total > pixabayAPI.perPage) {
+    if (response.data.totalHits > pixabayAPI.perPage) {
       observer.observe(anchor);
     }
   } catch (error) {
@@ -69,7 +69,7 @@ async function loadMoreData() {
       const response = await pixabayAPI.getPhotos();
       list.insertAdjacentHTML('beforeend', createMarkup(response.data.hits));
 
-      if (Math.ceil(response.data.total / 40) === pixabayAPI.page) {
+      if (Math.ceil(response.data.totalHits / 40) === pixabayAPI.page) {
         observer.unobserve(anchor);
         return Notify.success('The end of search.');
       }
